@@ -363,6 +363,13 @@ form textarea:focus{
         animation-name: baja-tarjeta;
         animation-duration: 1s;
     }
+    .tarjeta:hover{
+        box-shadow: 5px 10px 18px #0a0a0a;
+    }
+    .tarjeta__btn:hover{
+        box-shadow: 10px 10px 5px #2f5233;
+    }
+  
 }
 @media (min-width: 1025px){
     .header__nav ul a:hover{
@@ -397,7 +404,10 @@ form textarea:focus{
         animation-name: baja-tarjeta;
         animation-duration: 1s;
     }
- 
+    .tarjeta:hover{
+        box-shadow: 5px 10px 18px #0a0a0a;
+
+    }
 }
 /* animaciones */
 @keyframes sube-tarjeta {
@@ -416,20 +426,5 @@ form textarea:focus{
         transform: translateY(0px);
       }
 }
-@keyframes rrss-aumento {
-    0%{
-        scale: 1;
-    }
-    100%{
-        scale: 1.1;
-    }
-}
-@keyframes rrss-desaumento {
-    0%{
-        scale: 1.1;
-    }
-    100%{
-        scale: 1;
-    }
-}
+
 
