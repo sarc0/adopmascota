@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" type="image/png" href="../images/pet.png" />
+    <title>Adopta</title>
+  </head>
+  <body>
+    <header id="inicio">
+      <div class="header__logo">
+        <img src="../images/logo-perro-gato-verde.png" alt="logo" />
+        <h2>AdopMascota</h2>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <a href="../index.html">Inicio</a>
+          <a href="../pages/adopta.html">Adopta</a>
+          <a href="../pages/contactanos.html">Contáctanos</a>
+          <a href="../pages/ayudanos.html">Ayúdanos</a>
+          <a href="../pages/quienes.html">Quiénes somos</a>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-adopta grid-container">
+        <div class="tarjeta formulario-adopcion tarjeta0">
+          <h2>Información personal</h2>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" />
+          <label for="lastname">Apellido</label>
+          <input type="text" id="lastname" />
+          <label for="mail">E-mail</label>
+          <input type="email" id="mail" />
+          <label for="number">Número</label>
+          <input type="text" id="number" />
+          <label for="adress">Dirección</label>
+          <input type="text" id="adress" />
+        </div>
+        <div class="tarjeta formulario-adopcion tarjeta1">
+          <h2>Información general</h2>
+          <label for="">Elige una mascota</label>
+          <div class="mascota-radio">
+            <input type="radio" id="perro" value="perro" name="mascota" />
+            <label for="perro">Perro</label>
+          </div>
+          <div class="mascota-radio">
+            <input type="radio" id="gato" value="gato" name="mascota" />
+            <label for="gato">Gato</label>
+          </div>
+          <div class="mascota-radio">
+            <input type="radio" id="ambos" value="ambos" name="mascota" />
+            <label for="ambos">Ambos</label>
+          </div>
+          <label for="horas">Horas fuera de casa</label>
+          <select name="horas" id="horas">
+            <option value="0" disabled selected>Elige una opción</option>
+            <option value="8">8hs o menos</option>
+            <option value="8-10">8hs a 10hs</option>
+            <option value="10mas">Más de 10hs</option>
+          </select>
+          <label for="">¿Vives con alguna mascota?</label>
+          <div class="mascota-radio">
+            <input type="radio" name="mas_mascotas" id="si" value="si" />
+            <label for="si">Sí</label>
+          </div>
+          <div class="mascota-radio">
+            <input type="radio" name="mas_mascotas" id="no" value="no" />
+            <label for="no">No</label>
+          </div>
+        </div>
+        <input type="submit" class="tarjeta__btn btn-form" />
+    </main>
+    <footer>
+      <a href="#inicio"
+        ><img src="../images/up-arrow.png" alt="foto flecha hacia arriba"
+      /></a>
+      <div class="marca">
+        <img src="../images/logo-perro-gato-verde.png" alt="" />
+        <h2>AdopMascota <span>2022</span></h2>
+      </div>
+      <div class="rrss">
+        <p>Síguenos</p>
+        <div class="links">
+          <a href="https://www.instagram.com" target="_blank"
+            ><img src="../images/instagram.png" alt="Logo instagram"
+          /></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><img src="../images/twitter.png" alt="Logo twitter"
+          /></a>
+          <a href="https://www.facebook.com" target="_blank"
+            ><img src="../images/facebook.png" alt="Logo Facebook"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
