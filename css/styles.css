@@ -277,6 +277,8 @@ form textarea:focus{
     }
 }
 
+
+
 @media (min-width: 481px) and (max-width: 767px){
     .grid-container{
         display: grid;
