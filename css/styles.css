@@ -276,9 +276,6 @@ form textarea:focus{
         font-size: 90%;
     }
 }
-
-
-
 @media (min-width: 481px) and (max-width: 767px){
     .grid-container{
         display: grid;
@@ -318,13 +315,13 @@ form textarea:focus{
     .voluntario-mail{
         font-size: 70%;
     }
-    
-    
 }
-
-
 /*fin vista tablet*/
 @media (min-width:768px ) and (max-width:1024px){
+    .main-ayuda{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
     .header__nav ul{
         display: flex;
         flex-direction: row;
@@ -337,6 +334,34 @@ form textarea:focus{
     }
     .contacto-mail{
         font-size: 20px;
+    }
+    .main-quienes{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .main-contacto{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .btn-form{
+        grid-area: btn-form;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "tarj0 tarj1 "
+                             "btn-form btn-form";
+        gap: 20px;
+        padding: 20px;
+    }
+    .tarj-adop:hover,.tarj-resc:hover,.img__mascota:hover{
+        animation-name: sube-tarjeta;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .tarj-adop:not(:hover),.tarj-resc:not(:hover),.img__mascota:not(:hover){
+        animation-name: baja-tarjeta;
+        animation-duration: 1s;
     }
 }
 @media (min-width: 1025px){
@@ -363,4 +388,48 @@ form textarea:focus{
     .contacto-mail{
         font-size: 20px;
     }
+    .tarj-adop:hover,.tarj-resc:hover,.img__mascota:hover{
+        animation-name: sube-tarjeta;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .tarj-adop:not(:hover),.tarj-resc:not(:hover),.img__mascota:not(:hover){
+        animation-name: baja-tarjeta;
+        animation-duration: 1s;
+    }
+ 
 }
+/* animaciones */
+@keyframes sube-tarjeta {
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+@keyframes baja-tarjeta{
+    0% {
+        transform: translateY(-5px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+}
+@keyframes rrss-aumento {
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.1;
+    }
+}
+@keyframes rrss-desaumento {
+    0%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
