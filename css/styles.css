@@ -283,6 +283,9 @@ form textarea:focus{
         gap: 20px;
         padding: 20px;
     }
+    .formulario-adopcion{
+        min-height: 602px;
+    }
     .tarjeta0{
         grid-area: tarj0;
     }
@@ -310,15 +313,22 @@ form textarea:focus{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
-    .voluntario-mail{
-        font-size: 70%;
+    
+}
+@media (min-width:700px ) and (max-width:767px){
+    .voluntario-mail, .contacto-mail{
+        font-size: 19px;
     }
 }
+
 /*fin vista tablet*/
 @media (min-width:768px ) and (max-width:1024px){
     .main-ayuda{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+    }
+    .formulario-adopcion{
+        min-height: 539.39px;
     }
     .header__nav ul{
         display: flex;
@@ -373,6 +383,9 @@ form textarea:focus{
     .header__nav ul a:hover{
         background-color: #2f5233;
         color: #76b947;
+    }
+    .formulario-adopcion{
+        min-height: 539.39px;
     }
     .header__nav ul{
         display: flex;
@@ -436,5 +449,9 @@ form textarea:focus{
     font-family: 'Lobster', cursive;
     font-size: 30px;
     color: #2f5233;
+}
+.tarjeta__btn:hover{
+    color: #2f5233;
+    text-decoration: none;
 }
 
