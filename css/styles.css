@@ -8,18 +8,16 @@
 }html{
     scroll-behavior: smooth;
 }
+footer .marca h2, .header__logo h2{
+    overflow-y: hidden;
+}
+.img__mascota h3{
+    font-weight: bolder;
+}
 /*vista mobile*/
 /*--------------------------*/
 /*Inicio CSS del header mobile*/
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    background-color: #94c973;
-    min-width: 300px;
-}
+
 .header__logo{
     display: flex;
     justify-content: center;
@@ -31,7 +29,6 @@ header{
     padding: 2px;
 }
 .header__logo h2{
-    font-family: 'Lobster', cursive;
     font-size: 30px;
 }
 .header__nav{
@@ -426,5 +423,16 @@ form textarea:focus{
         transform: translateY(0px);
       }
 }
-
+.navbar-toggler{
+    background-color: #76b947;
+    border: 1px solid #2f5233;
+}
+.navbar{
+    background-color: #94c973;
+}
+.navbar span{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    color: #2f5233;
+}
 

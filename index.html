@@ -22,25 +22,50 @@
       href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="icon" type="image/png" href="./images/pet.png" />
     <title>Inicio</title>
   </head>
-  <body>
-    <header id="inicio">
-      <div class="header__logo">
-        <img src="/images/logo-perro-gato-verde.png" alt="logo" />
-        <h2>AdopMascota</h2>
+  <body id="inicio">
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <!-- Brand -->
+          <a class="navbar-brand" href="#"
+            ><img src="/images/logo-perro-gato-verde.png" alt="logo" />
+            <span>AdopMascota</span></a
+          >
+
+          <!-- Toggler/collapsibe Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <nav class="header__nav">
-        <ul>
-          <a href="./index.html">Inicio</a>
-          <a href="./pages/adopta.html">Adopta</a>
-          <a href="./pages/contactanos.html">Contáctanos</a>
-          <a href="./pages/ayudanos.html">Ayúdanos</a>
-          <a href="./pages/quienes.html">Quiénes somos</a>
-        </ul>
-      </nav>
     </header>
     <main class="grid-container main-index">
       <div class="tarjeta tarj-resc">
@@ -73,22 +98,22 @@
         </div>
         <a href="/pages/adopta.html" class="tarjeta__btn">Adopta</a>
       </div>
-        <div class="img__mascota mascota0">
-          <img src="/images/vertical-feliz.jpg" alt="foto perro feliz" />
-          <h3>Firulais | 3 años</h3>
-        </div>
-        <div class="img__mascota mascota1">
-          <img src="/images/vertical-playa.jpg" alt="foto perro playa" />
-          <h3>Rocket | 7 años</h3>
-        </div>
-        <div class="img__mascota mascota2">
-          <img src="/images/gato-sentado.jpg" alt="foto gato sentado" />
-          <h3>Nala | 4 años</h3>
-        </div>
-        <div class="img__mascota mascota3">
-          <img src="/images/gato-2.jpg" alt="foto gato sentado" />
-          <h3>Panchito | 11 años</h3>
-        </div>
+      <div class="img__mascota mascota0">
+        <img src="/images/vertical-feliz.jpg" alt="foto perro feliz" />
+        <h3>Firulais | 3 años</h3>
+      </div>
+      <div class="img__mascota mascota1">
+        <img src="/images/vertical-playa.jpg" alt="foto perro playa" />
+        <h3>Rocket | 7 años</h3>
+      </div>
+      <div class="img__mascota mascota2">
+        <img src="/images/gato-sentado.jpg" alt="foto gato sentado" />
+        <h3>Nala | 4 años</h3>
+      </div>
+      <div class="img__mascota mascota3">
+        <img src="/images/gato-2.jpg" alt="foto gato sentado" />
+        <h3>Panchito | 11 años</h3>
+      </div>
     </main>
     <footer>
       <a href="#inicio"
@@ -113,5 +138,15 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
