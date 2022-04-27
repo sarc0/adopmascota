@@ -8,6 +8,7 @@
 }html{
     scroll-behavior: smooth;
 }
+
 footer .marca h2, .header__logo h2{
     overflow-y: hidden;
 }
@@ -423,9 +424,10 @@ form textarea:focus{
         transform: translateY(0px);
       }
 }
+/*personalizando mi navbar hecha con bootstrap*/
 .navbar-toggler{
     background-color: #76b947;
-    border: 1px solid #2f5233;
+    color: #2f5233;
 }
 .navbar{
     background-color: #94c973;
