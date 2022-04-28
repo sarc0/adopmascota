@@ -477,4 +477,9 @@ form textarea:focus {
     border-left: 1px solid #76b947;
   }
 }
-
+.navbar-dark .navbar-nav .nav-link {
+  color: #2f5233;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #76b947;
+}
