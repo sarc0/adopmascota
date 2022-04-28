@@ -22,26 +22,68 @@
       href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="icon" type="image/png" href="../images/pet.png" />
     <title>Ayúdanos</title>
   </head>
   <body>
-    <header id="inicio">
-      <div class="header__logo">
-        <img src="../images/logo-perro-gato-verde.png" alt="logo" />
-        <h2>AdopMascota</h2>
-      </div>
-      <nav class="header__nav">
-        <ul>
-          <a href="../index.html">Inicio</a>
-          <a href="../pages/adopta.html">Adopta</a>
-          <a href="../pages/contactanos.html">Contáctanos</a>
-          <a href="../pages/ayudanos.html">Ayúdanos</a>
-          <a href="../pages/quienes.html">Quiénes somos</a>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="../index.html"
+        ><img src="../images/logo-perro-gato-verde.png" alt="logo" />
+        <span>AdopMascota</span></a
+      >
+
+      <!-- Toggler/collapsibe Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link text-success font-weight-bold lead"
+              href="../pages/adopta.html"
+              >Adopta</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-success font-weight-bold lead"
+              href="../pages/ayudanos.html"
+              >Ayúdanos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-success font-weight-bold lead"
+              href="../pages/contactanos.html"
+              >Contáctanos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-success font-weight-bold lead"
+              href="../pages/quienes.html"
+              >Quiénes somos</a
+            >
+          </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
     <main class="main-ayuda">
       <div class="tarjeta">
         <h2>Roles</h2>
@@ -67,8 +109,11 @@
         <p>✓Ganas de ayudar a ayudar</p>
         <p>✓Destreza o conocimiento en alguno de los roles</p>
         <p>✓Destreza en otro algún otro rol</p>
-        <h3>Súmate a nuestro equipo de voluntariado enviando un e-mail a la siguiente dirección</h3>
-        <img src="../images/nuevo-email.png" alt="">
+        <h3>
+          Súmate a nuestro equipo de voluntariado enviando un e-mail a la
+          siguiente dirección
+        </h3>
+        <img src="../images/nuevo-email.png" alt="" />
         <p class="voluntario-mail">voluntariado@adopmascota.com.ar</p>
       </div>
     </main>
@@ -95,5 +140,15 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

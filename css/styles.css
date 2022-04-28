@@ -8,18 +8,17 @@
 }html{
     scroll-behavior: smooth;
 }
+
+footer .marca h2, .header__logo h2{
+    overflow-y: hidden;
+}
+.img__mascota h3{
+    font-weight: bolder;
+}
 /*vista mobile*/
 /*--------------------------*/
 /*Inicio CSS del header mobile*/
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    background-color: #94c973;
-    min-width: 300px;
-}
+
 .header__logo{
     display: flex;
     justify-content: center;
@@ -31,7 +30,6 @@ header{
     padding: 2px;
 }
 .header__logo h2{
-    font-family: 'Lobster', cursive;
     font-size: 30px;
 }
 .header__nav{
@@ -285,6 +283,9 @@ form textarea:focus{
         gap: 20px;
         padding: 20px;
     }
+    .formulario-adopcion{
+        min-height: 602px;
+    }
     .tarjeta0{
         grid-area: tarj0;
     }
@@ -312,15 +313,22 @@ form textarea:focus{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
-    .voluntario-mail{
-        font-size: 70%;
+    
+}
+@media (min-width:700px ) and (max-width:767px){
+    .voluntario-mail, .contacto-mail{
+        font-size: 19px;
     }
 }
+
 /*fin vista tablet*/
 @media (min-width:768px ) and (max-width:1024px){
     .main-ayuda{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+    }
+    .formulario-adopcion{
+        min-height: 539.39px;
     }
     .header__nav ul{
         display: flex;
@@ -376,6 +384,9 @@ form textarea:focus{
         background-color: #2f5233;
         color: #76b947;
     }
+    .formulario-adopcion{
+        min-height: 539.39px;
+    }
     .header__nav ul{
         display: flex;
         flex-direction: row;
@@ -426,5 +437,21 @@ form textarea:focus{
         transform: translateY(0px);
       }
 }
-
+/*personalizando mi navbar hecha con bootstrap*/
+.navbar-toggler{
+    background-color: #76b947;
+    color: #2f5233;
+}
+.navbar{
+    background-color: #94c973;
+}
+.navbar span{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    color: #2f5233;
+}
+.tarjeta__btn:hover{
+    color: #2f5233;
+    text-decoration: none;
+}
 
