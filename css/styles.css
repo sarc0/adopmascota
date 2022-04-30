@@ -377,6 +377,9 @@ form textarea:focus{
     .tarjeta__btn:hover{
         box-shadow: 10px 10px 5px #2f5233;
     }
+    .main-index{
+
+    }
   
 }
 @media (min-width: 1025px){
@@ -396,9 +399,13 @@ form textarea:focus{
     }
     .main-index{
         display: grid;
-        grid-template-columns: repeat(3,2fr);
-        grid-template-areas: "tarj-resc tarj-resc"
-                            "";
+        grid-template-columns: repeat(2,2fr);
+        grid-template-areas: "tarj-resc tarj-adop"
+                            "carousel carousel";
+    }
+    .tarjeta-adop{
+      grid-area: tarj-adop;
+      grid-area: tarj-resc;
     }
     .voluntario-mail{
         font-size: 20px;
@@ -454,4 +461,6 @@ form textarea:focus{
     color: #2f5233;
     text-decoration: none;
 }
-
+.carousel{
+  grid-area: carousel;
+}
