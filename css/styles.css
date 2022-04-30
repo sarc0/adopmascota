@@ -269,12 +269,7 @@ form textarea:focus{
 /*fin de la vista mobile*/
 /*------------------------*/
 /*Inicio vista tablet*/
-@media (min-width: 300px) and (max-width: 330px){
-    .voluntario-mail{
-        font-size: 90%;
-    }
- 
-}
+
 @media (max-width: 300px){
   .main-index{
     display: grid;
@@ -326,9 +321,7 @@ form textarea:focus{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
-    .voluntario-mail, .contacto-mail{
-        font-size: 70%;
-    }
+   
     .main-quienes{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -343,11 +336,7 @@ form textarea:focus{
   }
     
 }
-@media (min-width:700px ) and (max-width:767px){
-    .voluntario-mail, .contacto-mail{
-        font-size: 19px;
-    }
-}
+
 @media (min-width: 650px) and (max-width:767px){
   .main-index{
     display: grid;
@@ -373,12 +362,7 @@ form textarea:focus{
     .header__nav ul a{
         border-bottom: none;
     }
-    .voluntario-mail{
-        font-size: 20px;
-    }
-    .contacto-mail{
-        font-size: 20px;
-    }
+   
     .main-quienes{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -449,12 +433,7 @@ form textarea:focus{
     .tarjeta-resc{
       grid-area: tarj-resc;
     }
-    .voluntario-mail{
-        font-size: 20px;
-    }
-    .contacto-mail{
-        font-size: 20px;
-    }
+   
     .tarj-adop:hover,.tarj-resc:hover,.img__mascota:hover{
         animation-name: sube-tarjeta;
         animation-duration: 1s;
