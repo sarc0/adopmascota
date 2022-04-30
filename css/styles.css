@@ -292,9 +292,10 @@ form textarea:focus{
 @media (min-width: 481px) and (max-width: 767px){
     .grid-container{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-areas: "tarj0 tarj1"
-                             "button button";
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "tarj0"
+                              "tarj1"
+                             "button";
         gap: 20px;
         padding: 20px;
     }
@@ -307,9 +308,7 @@ form textarea:focus{
     .tarjeta1{
         grid-area: tarj1;
     }
-    .main-adopta{
-        display: grid;
-    }
+   
     .btn-form{
         grid-area: button;
     }
