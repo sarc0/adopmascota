@@ -273,6 +273,26 @@ form textarea:focus{
     .voluntario-mail{
         font-size: 90%;
     }
+ 
+}
+@media (max-width: 300px){
+  .main-index{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "tarj-resc"
+                          "tarj-adop"
+                        "carousel";
+}
+}
+@media (min-width: 300px) and (max-width: 480px){
+  .main-index{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "tarj-resc"
+                          "tarj-adop"
+                        "carousel"
+                        "carousel2";
+}
 }
 @media (min-width: 481px) and (max-width: 767px){
     .grid-container{
@@ -313,6 +333,14 @@ form textarea:focus{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+    .main-index{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-areas: "tarj-resc"
+                            "tarj-adop"
+                          "carousel"
+                          "carousel2";
+  }
     
 }
 @media (min-width:700px ) and (max-width:767px){
@@ -320,7 +348,15 @@ form textarea:focus{
         font-size: 19px;
     }
 }
-
+@media (min-width: 650px) and (max-width:767px){
+  .main-index{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "tarj-resc tarj-adop"
+                        "carousel carousel2";
+    
+}
+}
 /*fin vista tablet*/
 @media (min-width:768px ) and (max-width:1024px){
     .main-ayuda{
@@ -378,8 +414,12 @@ form textarea:focus{
         box-shadow: 10px 10px 5px #2f5233;
     }
     .main-index{
-
-    }
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-areas: "tarj-resc tarj-adop"
+                          "carousel carousel2";
+      
+  }
   
 }
 @media (min-width: 1025px){
@@ -399,12 +439,14 @@ form textarea:focus{
     }
     .main-index{
         display: grid;
-        grid-template-columns: repeat(2,2fr);
+        grid-template-columns: repeat(2,1fr);
         grid-template-areas: "tarj-resc tarj-adop"
-                            "carousel carousel";
+                            "carousel carousel2";
     }
     .tarjeta-adop{
       grid-area: tarj-adop;
+    }
+    .tarjeta-resc{
       grid-area: tarj-resc;
     }
     .voluntario-mail{
@@ -461,6 +503,14 @@ form textarea:focus{
     color: #2f5233;
     text-decoration: none;
 }
-.carousel{
+
+.car1{
   grid-area: carousel;
+  display: flex;
+  justify-content: center;
+}
+.car2{
+  grid-area: carousel2;
+  display: flex;
+  justify-content: center;
 }
