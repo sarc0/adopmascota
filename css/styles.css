@@ -298,7 +298,7 @@ form textarea:focus{
     .grid-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-template-areas: "tarj0 tarj1 "
+        grid-template-areas: "tarj0 tarj1"
                              "button button";
         gap: 20px;
         padding: 20px;
@@ -320,18 +320,18 @@ form textarea:focus{
     }
     .main-contacto{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
     .main-ayuda{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
     .voluntario-mail, .contacto-mail{
         font-size: 70%;
     }
     .main-quienes{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
     .main-index{
       display: grid;
@@ -468,6 +468,21 @@ form textarea:focus{
         box-shadow: 5px 10px 18px #0a0a0a;
 
     }
+    .main-ayuda, .main-contacto, .main-quienes{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+  }
+  .btn-form{
+    grid-area: btn-form;
+}
+  .main-adopta{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "tarj0 tarj1 "
+                         "btn-form btn-form";
+    gap: 20px;
+    padding: 20px;
+}
 }
 /* animaciones */
 @keyframes sube-tarjeta {
