@@ -269,16 +269,16 @@ form textarea:focus{
 /*fin de la vista mobile*/
 /*------------------------*/
 /*Inicio vista tablet*/
-
-@media (max-width: 300px){
-  .main-index{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-areas: "tarj-resc"
-                          "tarj-adop"
-                        "carousel"
-                        "tarjeta-galeria";
-}
+@media (max-width:300px){
+    .main-index{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "tarj-resc"
+                              "tarj-adop"
+                            "tarjeta-carousel"
+                            "tarj-pros"
+                            "tarj-contras";
+    }
 }
 @media (min-width: 300px) and (max-width: 480px){
   .main-index{
@@ -286,10 +286,12 @@ form textarea:focus{
     grid-template-columns: repeat(1,1fr);
     grid-template-areas: "tarj-resc"
                           "tarj-adop"
-                        "carousel"
-                        "tarjeta-galeria";
+                        "tarjeta-carousel"
+                        "tarj-pros"
+                        "tarj-contras";
 }
 }
+
 @media (min-width: 481px) and (max-width: 767px){
     .grid-container{
         display: grid;
@@ -331,21 +333,13 @@ form textarea:focus{
       grid-template-columns: repeat(1,1fr);
       grid-template-areas: "tarj-resc"
                             "tarj-adop"
-                          "carousel"
-                          "tarjeta-galeria";
+                          "tarjeta-carousel"
+                          "tarj-pros"
+                          "tarj-contras";
   }
     
 }
 
-@media (min-width: 650px) and (max-width:767px){
-  .main-index{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-areas: "tarj-resc tarj-adop"
-                        "carousel tarjeta-galeria";
-    
-}
-}
 /*fin vista tablet*/
 @media (min-width:768px ) and (max-width:1024px){
     .main-ayuda{
@@ -398,14 +392,23 @@ form textarea:focus{
         box-shadow: 10px 10px 5px #2f5233;
     }
     .main-index{
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-      grid-template-areas: "tarj-resc"
-                            "tarj-adop"
-                          "carousel"
-                          "";
-      
-  }
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "tarj-resc"
+                              "tarj-adop"
+                            "tarjeta-carousel"
+                            "tarj-pros"
+                            "tarj-contras";
+    }
+  .tarjeta-carousel{
+    grid-area: tarjeta-carousel;
+}
+.tarj-contras{
+    grid-area: tarj-contras;
+}
+.tarj-pros{
+    grid-area: tarj-pros;
+}
   
 }
 @media (min-width: 1025px){
@@ -427,7 +430,8 @@ form textarea:focus{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-areas: "tarj-resc tarj-adop"
-                            "tarjeta-carousel tarjeta-carousel";
+                            "tarjeta-carousel tarjeta-carousel"
+                            "tarj-pros tarj-contras";
     }
     .tarjeta-adop{
       grid-area: tarj-adop;
@@ -502,4 +506,12 @@ form textarea:focus{
 .tarjeta-galeria{
     grid-area: tarjeta-galeria;
 }
-
+.tarjeta-carousel{
+    grid-area: tarjeta-carousel;
+}
+.tarj-contras{
+    grid-area: tarj-contras;
+}
+.tarj-pros{
+    grid-area: tarj-pros;
+}
