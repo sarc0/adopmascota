@@ -101,17 +101,20 @@
       <div class="tarjeta formulario-adopcion tarjeta1">
         <h2>Información general</h2>
         <label for="">Elige una mascota</label>
-        <div class="mascota-radio">
-          <input type="radio" id="perro" value="perro" name="mascota" />
-          <label for="perro">Perro</label>
+        <div class="form-check align-self-start">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Perro
+          </label>
         </div>
-        <div class="mascota-radio">
-          <input type="radio" id="gato" value="gato" name="mascota" />
-          <label for="gato">Gato</label>
+        <div class="form-check  align-self-start">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Gato
+          </label>
         </div>
-        <div class="mascota-radio">
-          <input type="radio" id="ambos" value="ambos" name="mascota" />
-          <label for="ambos">Ambos</label>
+        <div class="form-check  align-self-start">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Ambos
+          </label>
         </div>
         <label for="horas">Horas fuera de casa</label>
         <select name="horas" id="horas">
@@ -121,13 +124,15 @@
           <option value="10mas">Más de 10hs</option>
         </select>
         <label for="">¿Vives con alguna mascota?</label>
-        <div class="mascota-radio">
-          <input type="radio" name="mas_mascotas" id="si" value="si" />
-          <label for="si">Sí</label>
+        <div class="form-check align-self-start">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Sí
+          </label>
         </div>
-        <div class="mascota-radio">
-          <input type="radio" name="mas_mascotas" id="no" value="no" />
-          <label for="no">No</label>
+        <div class="form-check  align-self-start">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">No
+          </label>
         </div>
       </div>
       <input type="submit" class="tarjeta__btn btn-form" />
