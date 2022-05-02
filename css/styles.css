@@ -508,6 +508,7 @@ form textarea:focus{
 }
 .tarjeta-carousel{
     grid-area: tarjeta-carousel;
+   
 }
 .tarj-contras{
     grid-area: tarj-contras;
