@@ -276,7 +276,8 @@ form textarea:focus{
     grid-template-columns: repeat(1,1fr);
     grid-template-areas: "tarj-resc"
                           "tarj-adop"
-                        "carousel";
+                        "carousel"
+                        "tarjeta-galeria";
 }
 }
 @media (min-width: 300px) and (max-width: 480px){
@@ -286,7 +287,7 @@ form textarea:focus{
     grid-template-areas: "tarj-resc"
                           "tarj-adop"
                         "carousel"
-                        "carousel2";
+                        "tarjeta-galeria";
 }
 }
 @media (min-width: 481px) and (max-width: 767px){
@@ -331,7 +332,7 @@ form textarea:focus{
       grid-template-areas: "tarj-resc"
                             "tarj-adop"
                           "carousel"
-                          "carousel2";
+                          "tarjeta-galeria";
   }
     
 }
@@ -341,7 +342,7 @@ form textarea:focus{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: "tarj-resc tarj-adop"
-                        "carousel carousel2";
+                        "carousel tarjeta-galeria";
     
 }
 }
@@ -398,9 +399,11 @@ form textarea:focus{
     }
     .main-index{
       display: grid;
-      grid-template-columns: repeat(2,1fr);
-      grid-template-areas: "tarj-resc tarj-adop"
-                          "carousel carousel2";
+      grid-template-columns: repeat(1,1fr);
+      grid-template-areas: "tarj-resc"
+                            "tarj-adop"
+                          "carousel"
+                          "";
       
   }
   
@@ -424,7 +427,7 @@ form textarea:focus{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-areas: "tarj-resc tarj-adop"
-                            "carousel carousel2";
+                            "tarjeta-carousel tarjeta-carousel";
     }
     .tarjeta-adop{
       grid-area: tarj-adop;
@@ -496,14 +499,7 @@ form textarea:focus{
     color: #2f5233;
     text-decoration: none;
 }
+.tarjeta-galeria{
+    grid-area: tarjeta-galeria;
+}
 
-.car1{
-  grid-area: carousel;
-  display: flex;
-  justify-content: center;
-}
-.car2{
-  grid-area: carousel2;
-  display: flex;
-  justify-content: center;
-}
