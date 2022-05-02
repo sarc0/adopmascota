@@ -210,7 +210,9 @@ textarea {
   background-color: #94c973;
   border: 0;
   border-bottom: 2px solid #2f5233;
+  
 }
+
 .formulario-adopcion input:focus {
   outline: 0 none;
 }
@@ -272,166 +274,205 @@ form textarea:focus {
 /*fin de la vista mobile*/
 /*------------------------*/
 /*Inicio vista tablet*/
-@media (min-width: 300px) and (max-width: 330px) {
-  .voluntario-mail {
-    font-size: 90%;
-  }
+@media (max-width:300px){
+    .main-index{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "tarj-resc"
+                              "tarj-adop"
+                            "tarjeta-carousel"
+                            "tarj-pros"
+                            "tarj-contras";
+    }
 }
-@media (min-width: 481px) and (max-width: 767px) {
-  .grid-container {
+@media (min-width: 300px) and (max-width: 480px){
+  .main-index{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "tarj0 tarj1 "
-      "button button";
-    gap: 20px;
-    padding: 20px;
-  }
-  .formulario-adopcion {
-    min-height: 602px;
-  }
-  .tarjeta0 {
-    grid-area: tarj0;
-  }
-  .tarjeta1 {
-    grid-area: tarj1;
-  }
-  .main-adopta {
-    display: grid;
-  }
-  .btn-form {
-    grid-area: button;
-  }
-  .main-contacto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .main-ayuda {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .voluntario-mail,
-  .contacto-mail {
-    font-size: 70%;
-  }
-  .main-quienes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "tarj-resc"
+                          "tarj-adop"
+                        "tarjeta-carousel"
+                        "tarj-pros"
+                        "tarj-contras";
 }
-@media (min-width: 700px) and (max-width: 767px) {
-  .voluntario-mail,
-  .contacto-mail {
-    font-size: 19px;
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "tarj0"
+                              "tarj1"
+                             "button";
+        gap: 20px;
+        padding: 20px;
+    }
+    .formulario-adopcion{
+        min-height: 602px;
+    }
+    .tarjeta0{
+        grid-area: tarj0;
+    }
+    .tarjeta1{
+        grid-area: tarj1;
+    }
+   
+    .btn-form{
+        grid-area: button;
+    }
+    .main-contacto{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main-ayuda{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+   
+    .main-quienes{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main-index{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-areas: "tarj-resc"
+                            "tarj-adop"
+                          "tarjeta-carousel"
+                          "tarj-pros"
+                          "tarj-contras";
   }
+    
 }
 
 /*fin vista tablet*/
-@media (min-width: 768px) and (max-width: 1024px) {
-  .main-ayuda {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+@media (min-width:768px ) and (max-width:1024px){
+    .main-ayuda{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .formulario-adopcion{
+        min-height: 539.39px;
+    }
+    .header__nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .header__nav ul a{
+        border-bottom: none;
+    }
+   
+    .main-quienes{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .main-contacto{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .btn-form{
+        grid-area: btn-form;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "tarj0 tarj1 "
+                             "btn-form btn-form";
+        gap: 20px;
+        padding: 20px;
+    }
+    .tarj-adop:hover,.tarj-resc:hover,.img__mascota:hover{
+        animation-name: sube-tarjeta;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .tarj-adop:not(:hover),.tarj-resc:not(:hover),.img__mascota:not(:hover){
+        animation-name: baja-tarjeta;
+        animation-duration: 1s;
+    }
+    .tarjeta:hover{
+        box-shadow: 5px 10px 18px #0a0a0a;
+    }
+    .tarjeta__btn:hover{
+        box-shadow: 10px 10px 5px #2f5233;
+    }
+    .main-index{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "tarj-resc"
+                              "tarj-adop"
+                            "tarjeta-carousel"
+                            "tarj-pros"
+                            "tarj-contras";
+    }
+  .tarjeta-carousel{
+    grid-area: tarjeta-carousel;
+}
+.tarj-contras{
+    grid-area: tarj-contras;
+}
+.tarj-pros{
+    grid-area: tarj-pros;
+}
+  
+}
+@media (min-width: 1025px){
+    .header__nav ul a:hover{
+        background-color: #2f5233;
+        color: #76b947;
+    }
+    .formulario-adopcion{
+        min-height: 539.39px;
+    }
+    .header__nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .tarjeta__btn:hover{
+        box-shadow: 10px 10px 5px #2f5233;
+    }
+    .main-index{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "tarj-resc tarj-adop"
+                            "tarjeta-carousel tarjeta-carousel"
+                            "tarj-pros tarj-contras";
+    }
+    .tarjeta-adop{
+      grid-area: tarj-adop;
+    }
+    .tarjeta-resc{
+      grid-area: tarj-resc;
+    }
+   
+    .tarj-adop:hover,.tarj-resc:hover,.img__mascota:hover{
+        animation-name: sube-tarjeta;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .tarj-adop:not(:hover),.tarj-resc:not(:hover),.img__mascota:not(:hover){
+        animation-name: baja-tarjeta;
+        animation-duration: 1s;
+    }
+    .tarjeta:hover{
+        box-shadow: 5px 10px 18px #0a0a0a;
+
+    }
+    .main-ayuda, .main-contacto, .main-quienes{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
   }
-  .formulario-adopcion {
-    min-height: 539.39px;
-  }
-  .header__nav ul {
-    display: flex;
-    flex-direction: row;
-  }
-  .header__nav ul a {
-    border-bottom: none;
-  }
-  .voluntario-mail {
-    font-size: 20px;
-  }
-  .contacto-mail {
-    font-size: 20px;
-  }
-  .main-quienes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .main-contacto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .btn-form {
+  .btn-form{
     grid-area: btn-form;
-  }
-  .grid-container {
+}
+  .main-adopta{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "tarj0 tarj1 "
-      "btn-form btn-form";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "tarj0 tarj1 "
+                         "btn-form btn-form";
     gap: 20px;
     padding: 20px;
-  }
-  .tarj-adop:hover,
-  .tarj-resc:hover,
-  .img__mascota:hover {
-    animation-name: sube-tarjeta;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
-  .tarj-adop:not(:hover),
-  .tarj-resc:not(:hover),
-  .img__mascota:not(:hover) {
-    animation-name: baja-tarjeta;
-    animation-duration: 1s;
-  }
-  .tarjeta:hover {
-    box-shadow: 5px 10px 18px #0a0a0a;
-  }
-  .tarjeta__btn:hover {
-    box-shadow: 10px 10px 5px #2f5233;
-  }
 }
-@media (min-width: 1025px) {
-  .header__nav ul a:hover {
-    background-color: #2f5233;
-    color: #76b947;
-  }
-  .formulario-adopcion {
-    min-height: 539.39px;
-  }
-  .header__nav ul {
-    display: flex;
-    flex-direction: row;
-  }
-  .tarjeta__btn:hover {
-    box-shadow: 10px 10px 5px #2f5233;
-  }
-  .main-index {
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-areas:
-      "tarj-resc tarj-resc"
-      "";
-  }
-  .voluntario-mail {
-    font-size: 20px;
-  }
-  .contacto-mail {
-    font-size: 20px;
-  }
-  .tarj-adop:hover,
-  .tarj-resc:hover,
-  .img__mascota:hover {
-    animation-name: sube-tarjeta;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
-  .tarj-adop:not(:hover),
-  .tarj-resc:not(:hover),
-  .img__mascota:not(:hover) {
-    animation-name: baja-tarjeta;
-    animation-duration: 1s;
-  }
-  .tarjeta:hover {
-    box-shadow: 5px 10px 18px #0a0a0a;
-  }
 }
 /* animaciones */
 @keyframes sube-tarjeta {
@@ -482,4 +523,17 @@ form textarea:focus {
 }
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #76b947;
+}
+.tarjeta-galeria{
+    grid-area: tarjeta-galeria;
+}
+.tarjeta-carousel{
+    grid-area: tarjeta-carousel;
+   
+}
+.tarj-contras{
+    grid-area: tarj-contras;
+}
+.tarj-pros{
+    grid-area: tarj-pros;
 }
