@@ -432,7 +432,8 @@ form textarea:focus {
         flex-direction: row;
     }
     .tarjeta__btn:hover{
-        box-shadow: 10px 10px 5px #2f5233;
+      box-shadow: 5px 10px 18px #0a0a0a;
+
     }
     .main-index{
         display: grid;
